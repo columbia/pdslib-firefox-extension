@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Privacy Loss Dashboard</title>
+    <script src="chart.js"></script>
+    <script src="chartjs-plugin-annotation.min.js"></script>
+    <script src="popup.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        width: 600px;
+        max-height: 300px;
+        overflow: hidden; /* Prevent scrolling */
+      }
+      #chartContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .chart-item {
+        width: 48%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 300;">Privacy loss this week:</h2>
+    <div id="chartContainer">
+      <div class="chart-item">
+        <canvas id="CollusionChart" width="280" height="220"></canvas>
+      </div>
+      <div class="chart-item">
+        <canvas id="QuotaChart" width="280" height="220"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
